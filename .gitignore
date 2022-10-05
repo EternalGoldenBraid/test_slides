@@ -1,0 +1,7 @@
+#Ignore files >100MB in your Git repos
+#find . -size +1G | sed 's|^./||g' | cat >> .gitignore
+
+*eraser_1maxitr.gif
+*box_1maxitr.gif
+*box_50maxitr.gif
+*eraser_50maxitr.gif
