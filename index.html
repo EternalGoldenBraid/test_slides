@@ -165,13 +165,6 @@ Template can be an offline formed representation of the object of interest
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-Render 3D model from different viewpoints and try to find the nearest to your inference image.
-<img src="PoseEstimation/Presentations/assets/others/codebook-generation.png" alt="" style="object-fit: scale-down">
-
-_(OVE6D, Cai et.al., CVPR 2022)_
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
 Capture video with labeled poses. Or label the poses onto the video after recording.
 <img src="PoseEstimation/Presentations/assets/others/gen6d_template.png" alt="" style="object-fit: scale-down">
 
@@ -179,11 +172,19 @@ _(Gen6D, Liu et. al., ECCV 2022)_
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+Render 3D model from different viewpoints and try to find the nearest to your inference image.
+<img src="PoseEstimation/Presentations/assets/others/codebook-generation.png" alt="" style="object-fit: scale-down">
+
+_(OVE6D, Cai et.al., CVPR 2022)_
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
 ## OVE6D: Object Viewpoint Encoding for Depth-based 6D Object Pose Estimation
 
 - **Template based method**
 - **Assumes CAD model and segmentation mask are available**
-<img src="PoseEstimation/Presentations/assets/others/OVE6D_inference_pipeline.png" alt="" style="object-fit: scale-down">
+
+<img src="PoseEstimation/Presentations/assets/others/intro_figure.png" alt="" style="width: 700px; object-fit: fill">
 
 _(OVE6D, Cai et. al.)_
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -193,7 +194,7 @@ _(OVE6D, Cai et. al.)_
 2. Estimate initial location `$t_0$` with segment depth `$V$`.
 3. Encode input into an in-plane rotation invariant representation.
 
-<img src="PoseEstimation/Presentations/assets/others/viewpoint_embedding_tSNE.png" alt="" style="width: 500px; object-fit: fill">
+<img src="PoseEstimation/Presentations/assets/others/viewpoint_embedding_tSNE.png" alt="" style="width: 600px; object-fit: fill">
 
 _(OVE6D, Cai et. al.)_
 `$\dots \rightarrow$`
