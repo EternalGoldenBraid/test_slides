@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="plugin/customcontrols/style.css">
 
 
-
     <script defer src="dist/fontawesome/all.min.js"></script>
 
 	<script type="text/javascript">
@@ -223,10 +222,10 @@ _(OVE6D, Cai et. al.)_
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Example scans
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/cad_videos/budha_cad.mp4" width="500" loop=true></video>
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/cad_videos/clipper_cad.mp4" width="500" loop=true></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/cad_videos/budha_cad.mp4" width="500"></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/cad_videos/clipper_cad.mp4" width="500"></video>
 
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/cad_videos/gear_assembled_ply.mp4" width="500" loop=true></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/cad_videos/gear_assembled_ply.mp4" width="500"></video>
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -251,10 +250,10 @@ _(OVE6D, Cai et. al.)_
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Qualitative results.
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/Results/head_phones.mp4"></video>
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/Results/pot.mp4"></video>
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/Results/gear_assembled.mp4"></video>
-<video data-autoplay controls src="PoseEstimation/Presentations/assets/Results/pot.mp4"></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/Results/head_phones.mp4"></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/Results/pot.mp4"></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/Results/gear_assembled.mp4"></video>
+<video data-autoplay loop controls src="PoseEstimation/Presentations/assets/Results/drone.mp4"></video>
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -304,9 +303,8 @@ _(OVE6D, Cai et. al.)_
 	}
 
 	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
-	var isLight = isLight(bgColor);
 
-	if(isLight){
+	if(isLight(bgColor)){
 		document.body.classList.add('has-light-background');
 	} else {
 		document.body.classList.add('has-dark-background');
@@ -342,10 +340,6 @@ _(OVE6D, Cai et. al.)_
 		  pedantic: false,
 		  smartLists: false,
 		  smartypants: false,
-		},
-
-		mermaid: {
-			theme: isLight ? 'default' : 'dark',
 		},
 
 		customcontrols: {
